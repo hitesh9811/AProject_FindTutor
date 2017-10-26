@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="sil">#BFBFBF</color>
+    <color name="selected">#AA3A4A64</color>
+    <color name="pressed">#AA3A4A64</color>
+    <color name="focused">#AA3A4A64</color>
+    <color name="bg_window">#00FFFFFF</color>
+    <color name="b">#111111</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dotvoid.drona.login_with_facebook">
+
+        <TextView
+            android:layout_height="70dp"
+            android:textColor="#BFBFBF"
+            android:textSize="30dp"
+            android:background="@drawable/background"
+            android:layout_width="match_parent"
+            android:text="Log In using Facebook"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+</LinearLayout>

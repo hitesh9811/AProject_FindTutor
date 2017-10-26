@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.dotvoid.drona.SignUp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo1"/>
+
+    <ImageView
+        android:src="@drawable/signup3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp" />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:hint="Enter a Username"
+        android:gravity="center"
+        android:textColorHint="#BFBFBF"
+        android:textColor="#BFBFBF"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="-10dp"
+        android:background="#BFBFBF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:hint="Enter a Unique and Friendly Username"
+        android:gravity="center"
+        android:textColorHint="#BFBFBF"
+        android:textColor="#BFBFBF" />
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginRight="25dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="25dp"
+        android:hint="Enter a Password"
+        android:inputType="textNoSuggestions|textPassword"
+        android:gravity="center"
+        android:textColorHint="#BFBFBF"
+        android:textColor="#BFBFBF"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="-10dp"
+        android:background="#BFBFBF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:hint="Min 8 Characters, 1 Number, Uppercase and Lowercase"
+        android:gravity="center"
+        android:textColorHint="#BFBFBF"
+        android:textColor="#BFBFBF" />
+
+    <EditText
+        android:id="@+id/passconfirm"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif"
+        android:inputType="textNoSuggestions|textPassword"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:hint="Re-enter Password"
+        android:gravity="center"
+        android:textColorHint="#BFBFBF"
+        android:textColor="#BFBFBF"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="-10dp"
+        android:background="#BFBFBF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:hint="Enter the password, once again"
+        android:gravity="center"
+        android:textColorHint="#BFBFBF"
+        android:textColor="#BFBFBF" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/curverbutton"
+        android:gravity="center"
+        android:text="NEXT"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+
+</LinearLayout>

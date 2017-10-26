@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.dotvoid.drona.number_confirm">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo1"/>
+
+    <ImageView
+        android:src="@drawable/signup2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp" />
+
+    <EditText
+        android:id="@+id/verification_code"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:maxLength="6"
+        android:inputType="textNoSuggestions|textVisiblePassword|number"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:hint="Enter 6 digit verification code"
+        android:textColorHint="#BFBFBF"
+        android:textColor="#BFBFBF"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="-10dp"
+        android:background="#BFBFBF"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:hint="Enter the received code here"
+        android:gravity="center"
+        android:textColorHint="#BFBFBF"
+        android:textColor="#BFBFBF" />
+
+    <Button
+        android:id="@+id/numcon"
+        android:onClick="numcon"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/curverbutton"
+        android:text="NEXT"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="#BFBFBF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Didn't receive any code?"
+            android:textColor="#BFBFBF"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/verify"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="RESEND VERIFICATION CODE"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

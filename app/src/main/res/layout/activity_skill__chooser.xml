@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.dotvoid.drona.Skill_Chooser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:text="Select topic to learn,"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="go_to_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="7dp"
+            android:textSize="16dp"
+            android:text="SKIP"
+            android:background="@drawable/curverbutton"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <GridLayout
+            android:id="@+id/skill_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:id="@+id/f1"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginLeft="5dp"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/java"/>
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Java"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f2"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Android"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/and"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f3"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Guitar"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/guitar"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f4"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Football"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/footballr"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f5"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Algebra"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/algebra"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f6"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginTop="10dp"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Geometry"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/geometry" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f7"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginLeft="5dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="C++"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cpp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f8"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Photoshop"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/photoshop"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f9"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginTop="10dp"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Medicine"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/medicine"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f10"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Calligraphy"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/calligraphy"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f11"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Yoga"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/yoga"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/f12"
+                android:clickable="true"
+                android:foreground="@drawable/selector"
+                android:layout_marginTop="10dp"
+                android:layout_width="110dp"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:paddingTop="15dp"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Cricket"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cricket"/>
+
+            </FrameLayout>
+
+
+
+        </GridLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
