@@ -63,11 +63,4 @@ public class number_register extends AppCompatActivity {
         startActivity(revert);
         overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
     }
-
-    /*public void numreg(View view)
-    {
-        Intent b=new Intent(this,number_confirm.class);
-        startActivity(b);
-        overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-    }*/
 }

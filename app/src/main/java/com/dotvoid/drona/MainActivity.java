@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent f = new Intent(getApplicationContext(), Skill_Chooser.class);
-                startActivity(f);
 
                 user_name=u.getText().toString();
                 password=p.getText().toString();
@@ -40,24 +39,24 @@ public class MainActivity extends AppCompatActivity {
                 sqLiteDatabase=DBHelp.getReadableDatabase();
                 Cursor cursor=DBHelp.getContact(user_name,password,sqLiteDatabase);
 
-               /* if(cursor.moveToFirst())
+                if(cursor.moveToFirst())
                 {
 
                     fname=cursor.getString(0);
                     lname=cursor.getString(1);
-                    Intent f = new Intent(getApplicationContext(), Skill_Selector.class);
-                    f.putExtra(fname, "fname");
-                    f.putExtra(lname, "lname");
+                    Intent f = new Intent(getApplicationContext(), Skill_Chooser.class);
+                    f.putExtra("fname",fname);
+                    f.putExtra("lname",lname);
                     startActivity(f);
                     overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
 
-                }*/
-            /*  else
+                }
+
+             else
                     {
 
                         Toast.makeText(getBaseContext(), "Wrong username or password", Toast.LENGTH_LONG).show();
                     }
-*/
 
             }
         });

@@ -49,11 +49,4 @@ public class SignUp extends AppCompatActivity {
         });
 
     }
-
- /*   public void sign_up1(View view)
-    {
-        Intent d = new Intent(this,SignUp2.class);
-        startActivity(d);
-        overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-    }*/
 }

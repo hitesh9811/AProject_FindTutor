@@ -2,19 +2,12 @@ package com.dotvoid.drona;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.icu.util.Calendar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -23,7 +16,6 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
-import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import java.util.Date;
@@ -143,15 +135,15 @@ public class SignUp2 extends AppCompatActivity {
                 g=gender.getSelectedItem().toString();
                 d=age.getText().toString();
 
-                q.putExtra(u,"uname");
-                q.putExtra(p,"pass");
-                q.putExtra(pn,"phone");
-                q.putExtra(e,"email");
-                q.putExtra(f,"fname");
-                q.putExtra(l,"lname");
-                q.putExtra(c,"city");
-                q.putExtra(g,"gender");
-                q.putExtra(d,"age");
+                q.putExtra("uname",u);
+                q.putExtra("pass",p);
+                q.putExtra("phone",pn);
+                q.putExtra("email",e);
+                q.putExtra("fname",f);
+                q.putExtra("lname",l);
+                q.putExtra("city",c);
+                q.putExtra("gender",g);
+                q.putExtra("age",d);
 
                 startActivity(q);
                 overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
@@ -255,15 +247,4 @@ public class SignUp2 extends AppCompatActivity {
 
         }
     }
-
-
-
-  /* public void sign_up2(View view)
-    {
-        //ShowDialog();
-        Intent e = new Intent(this,SignUpDone.class);
-        startActivity(e);
-        overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
-    }*/
-
 }
