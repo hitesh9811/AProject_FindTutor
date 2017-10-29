@@ -25,7 +25,7 @@
         android:id="@+id/teacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ABHISHEK JOSHI"
+        android:text="ANURAG JOSHI"
         android:textSize="20dp"
         android:layout_gravity="center"
         />
@@ -37,7 +37,7 @@
         android:id="@+id/summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gaming Enthusiast. Unity and c# expert. Android App developer. Althelete. UI/UX Designer. SAT Topper"
+        android:text="Gaming Enthusiast. Unity and c# expert. Android App developer. Althelete. UI/UX Designer."
         android:textSize="15dp"
         android:layout_gravity="center"
         />
@@ -61,7 +61,7 @@
             android:textColor="#abcdef"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="BCA. CEH. Unity Certified Programmer."
+            android:text="BSc. CEH. Unity Certified Programmer."
             android:id="@+id/qualification"
             android:layout_marginLeft="22dp"
             android:layout_width="120dp"
@@ -87,7 +87,7 @@
         <TextView
             android:textColor="#abcdef"
             android:layout_gravity="center"
-            android:text="abhishek_joshi@outlok.com"
+            android:text="anurag_joshi@outlok.com"
             android:gravity="center"
             android:id="@+id/emailID"
             android:layout_marginLeft="50dp"
