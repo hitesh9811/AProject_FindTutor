@@ -66,7 +66,7 @@ Intent get=getIntent();
                             t.setText("Vipin Rathi");
                             des.setText("Research Scholar at JNU,Internship at CERN,Research Fellow at NISCAIR(CSIR),etc");
                             qual.setText("RHCSA, RHCSE, RHCA, MCSA, Mtech(CSE) ");
-                            mailID.setText("vipinrathi@gmail.com");
+                            mailID.setText("vipinrathi@gmail.com");  
 
 
                         }
