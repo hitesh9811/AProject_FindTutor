@@ -62,10 +62,10 @@ Intent get=getIntent();
                         img.setImageResource(images[position]);
                         if(position==0)
                         {
-                            t.setText("Shivam Pandey");
-                            des.setText("SAP Intern. Hacking Enthusiast. Software Developer.");
-                            qual.setText("CEH, CCNA, CCNP, BCA");
-                            mailID.setText("shivampandey@gmail.com");
+                            t.setText("Shivam Gupta");
+                            des.setText("UI UX Designer. Android Enthusiast. Love Guru.");
+                            qual.setText("BCA");
+                            mailID.setText("shivamgupta@gmail.com");
 
                         }
                         if(position==1)
