@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 /**
- * Created by abhishekjoshi on 19/09/17.
+ * Created by anuragjoshi on 19/09/17.
  */
 
 public class DBHelp extends SQLiteOpenHelper
@@ -23,7 +23,7 @@ public class DBHelp extends SQLiteOpenHelper
     public static final String USER_AGE="age";
 
     public static final String TABLE_NAME="user_info";
-    public static final String DATABASE_NAME="drona.db";
+    public static final String DATABASE_NAME="find.db";
     public static final int DATABASE_VERSION=1;
     public static final String CREATE_QUERY="CREATE TABLE " +TABLE_NAME+"("+USER_NAME+" TEXT,"+USER_PASS+" TEXT,"+USER_MOBILE+" TEXT,"+USER_EMAIL+" TEXT,"+USER_FNAME+" TEXT,"+USER_LNAME+" TEXT,"+USER_CITY+" TEXT,"+USER_GENDER+" TEXT,"+USER_AGE+" TEXT);";
 

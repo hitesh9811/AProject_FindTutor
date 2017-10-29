@@ -63,7 +63,7 @@ public class number_confirm extends AppCompatActivity {
                 if(code.equals("664732"))
                 {
                     Intent c = new Intent(getApplicationContext(),SignUp.class);
-                    c.putExtra(phone,"phone");
+                    c.putExtra("phone",phone);
                     startActivity(c);
                     overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
                 }
