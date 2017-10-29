@@ -37,7 +37,7 @@
         android:id="@+id/summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gaming Enthusiast. Unity and c# expert. Android App developer. Althelete. UI/UX Designer."
+        android:text="Gaming Enthusiast. Unity and c# expert. Android App developer. Athelete. UI/UX Designer."
         android:textSize="15dp"
         android:layout_gravity="center"
         />
