@@ -149,6 +149,8 @@ public class SignUp2 extends AppCompatActivity {
                     startActivity(q);
                     overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
                 }
+                else
+                    Toast.makeText(getBaseContext(), "Please enter all the details.", Toast.LENGTH_LONG).show();
             }
         });
 
