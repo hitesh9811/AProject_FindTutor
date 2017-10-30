@@ -134,19 +134,21 @@ public class SignUp2 extends AppCompatActivity {
                 c=m.getText().toString();
                 g=gender.getSelectedItem().toString();
                 d=age.getText().toString();
+                if(!e.isEmpty() && !f.isEmpty() && !l.isEmpty() && !c.isEmpty() &&  !g.isEmpty() && !d.isEmpty()) {
 
-                q.putExtra("uname",u);
-                q.putExtra("pass",p);
-                q.putExtra("phone",pn);
-                q.putExtra("email",e);
-                q.putExtra("fname",f);
-                q.putExtra("lname",l);
-                q.putExtra("city",c);
-                q.putExtra("gender",g);
-                q.putExtra("age",d);
+                    q.putExtra("uname", u);
+                    q.putExtra("pass", p);
+                    q.putExtra("phone", pn);
+                    q.putExtra("email", e);
+                    q.putExtra("fname", f);
+                    q.putExtra("lname", l);
+                    q.putExtra("city", c);
+                    q.putExtra("gender", g);
+                    q.putExtra("age", d);
 
-                startActivity(q);
-                overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
+                    startActivity(q);
+                    overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
+                }
             }
         });
 
