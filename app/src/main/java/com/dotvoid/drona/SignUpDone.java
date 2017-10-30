@@ -75,7 +75,7 @@ public class SignUpDone extends AppCompatActivity {
                 boolean on = t.isChecked();
 
                 if (on) {
-                    l1.setBackgroundColor(Color.BLACK);
+                    l1.setBackgroundColor(Color.GRAY);
                 } else {
                    l1.setBackground(getResources().getDrawable(R.drawable.background));
                 }
