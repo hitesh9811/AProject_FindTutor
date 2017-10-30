@@ -1,3 +1,4 @@
+
 package com.dotvoid.drona;
 
 import android.content.Intent;
@@ -31,6 +32,11 @@ public class SignUp extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String E1,E2,E3;
+                E1=e1.getText().toString();
+                E2=e2.getText().toString();
+                E3=e3.getText().toString();
+                if(!E1.isEmpty() && !E2.isEmpty() && !E3.isEmpty() ) {
                 if(e2.getText().toString().equals(e3.getText().toString()))
                 {
                     Intent d = new Intent(getApplicationContext(),SignUp2.class);
@@ -44,7 +50,7 @@ public class SignUp extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Passwords do not match. Please retry",Toast.LENGTH_LONG).show();
                 }
-
+                }
             }
         });
 
