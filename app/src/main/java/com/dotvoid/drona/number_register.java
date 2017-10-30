@@ -42,6 +42,8 @@ public class number_register extends AppCompatActivity {
                 startActivity(b);
                 overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
                 }
+                else
+                    Toast.makeText(getBaseContext(), "Please enter phone number.", Toast.LENGTH_LONG).show();
             }
         });
 
