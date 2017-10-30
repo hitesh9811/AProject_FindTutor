@@ -33,7 +33,7 @@ public class number_register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 pn=phn.getText().toString();
-                if(pn != null && !pn.isEmpty()) {
+                if(pn != null && !pn.isEmpty() && pn.length()>9) {
                 send_sms();
                 Intent b=new Intent(getApplicationContext(),number_confirm.class);
 
