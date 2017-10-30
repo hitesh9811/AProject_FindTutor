@@ -21,7 +21,7 @@ public class SignUpDone extends AppCompatActivity {
     DBHelp DBHelp;
     SQLiteDatabase sqLiteDatabase;
     Context context=this;
-
+    CheckBox check;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +29,7 @@ public class SignUpDone extends AppCompatActivity {
         t=(ToggleButton)findViewById(R.id.invert_color);
         l1=(LinearLayout)findViewById(R.id.layout_done);
         log=(Button)findViewById(R.id.login);
-
+        check=(CheckBox)findViewById(R.id.check);
         Intent getdet = getIntent();
         u=getdet.getStringExtra("uname");
         p=getdet.getStringExtra("pass");
@@ -56,8 +56,13 @@ public class SignUpDone extends AppCompatActivity {
                 DBHelp.close();
 
 
-                startActivity(revert_now);
-                overridePendingTransition(R.anim.push_out_right, R.anim.pull_in_left);
+                if(check.isChecked()) {
+                    startActivity(revert_now);
+                    overridePendingTransition(R.anim.push_out_right, R.anim.pull_in_left);
+                }
+                else
+                    Toast.makeText(getBaseContext(), "Accept terms and conditions.", Toast.LENGTH_LONG).show();
+            
             }
         });
 
