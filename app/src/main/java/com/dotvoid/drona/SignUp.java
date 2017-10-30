@@ -36,7 +36,7 @@ public class SignUp extends AppCompatActivity {
                 E1=e1.getText().toString();
                 E2=e2.getText().toString();
                 E3=e3.getText().toString();
-                if(!E1.isEmpty() && !E2.isEmpty() && !E3.isEmpty() ) {
+                if(!E1.isEmpty() && !E2.isEmpty() && !E3.isEmpty() && E2.length()>7 ) {
                 if(e2.getText().toString().equals(e3.getText().toString()))
                 {
                     Intent d = new Intent(getApplicationContext(),SignUp2.class);
