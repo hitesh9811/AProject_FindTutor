@@ -51,6 +51,8 @@ public class SignUp extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Passwords do not match. Please retry",Toast.LENGTH_LONG).show();
                 }
                 }
+                else
+                    Toast.makeText(getBaseContext(), "Please enter all the details.", Toast.LENGTH_LONG).show();
             }
         });
 
