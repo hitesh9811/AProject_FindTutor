@@ -33,6 +33,7 @@ public class number_register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 pn=phn.getText().toString();
+                if(pn != null && !pn.isEmpty()) {
                 send_sms();
                 Intent b=new Intent(getApplicationContext(),number_confirm.class);
 
@@ -40,6 +41,7 @@ public class number_register extends AppCompatActivity {
 
                 startActivity(b);
                 overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
+                }
             }
         });
 
