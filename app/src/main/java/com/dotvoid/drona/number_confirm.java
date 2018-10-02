@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class number_confirm extends AppCompatActivity {
 
     private static final int MY_PERMISSIONS_REQUEST_SEND_SMS=0;
-    String phone;
+    String phoneNumber;
     TextView t;
     String code;
     EditText e1;
@@ -34,7 +34,7 @@ public class number_confirm extends AppCompatActivity {
         t=(TextView)findViewById(R.id.verify);
 
         Intent i=getIntent();
-        phone=i.getStringExtra("phone");
+        phoneNumber=i.getStringExtra("phoneNumber");
 
         t.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +63,7 @@ public class number_confirm extends AppCompatActivity {
                 if(code.equals("664732"))
                 {
                     Intent c = new Intent(getApplicationContext(),SignUp.class);
-                    c.putExtra("phone",phone);
+                    c.putExtra("phoneNumber",phoneNumber);
                     startActivity(c);
                     overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
                 }
@@ -99,7 +99,7 @@ public class number_confirm extends AppCompatActivity {
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     SmsManager smsManager = SmsManager.getDefault();
-                    smsManager.sendTextMessage(phone, null, "Your verification code is 664732", null, null);
+                    smsManager.sendTextMessage(phoneNumber, null, "Your verification code is 664732", null, null);
                     Toast.makeText(getApplicationContext(), "SMS sent.",
                             Toast.LENGTH_LONG).show();
                 } else {
