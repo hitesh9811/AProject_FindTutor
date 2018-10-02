@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class Skill_Chooser extends AppCompatActivity {
 
     FrameLayout f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12;
-    String fn,ln;
+    String firstName,lastName;
     TextView t;
 
     @Override
@@ -19,13 +19,13 @@ public class Skill_Chooser extends AppCompatActivity {
         setContentView(R.layout.activity_skill__chooser);
 
         Intent i=getIntent();
-        fn=i.getStringExtra("fname");
-        ln=i.getStringExtra("lname");
+        firstName=i.getStringExtra("fname");
+        lastName=i.getStringExtra("lname");
 
 
         t=(TextView)findViewById(R.id.textView);
 
-        t.setText(fn+" "+ln+", "+t.getText().toString());
+        t.setText(firstName+" "+lastName+", "+t.getText().toString());
 
         f1=(FrameLayout)findViewById(R.id.f1);
         f2=(FrameLayout)findViewById(R.id.f2);
