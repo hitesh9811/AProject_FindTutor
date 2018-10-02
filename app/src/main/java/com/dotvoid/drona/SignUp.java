@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class SignUp extends AppCompatActivity {
 
-    String phone;
+    String ph;
     EditText e1,e2,e3;
     Button next;
 
@@ -26,7 +26,7 @@ public class SignUp extends AppCompatActivity {
         next=(Button)findViewById(R.id.next);
 
         Intent in=getIntent();
-        phone=in.getStringExtra("phone");
+        ph=in.getStringExtra("ph");
 
 
         next.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +42,7 @@ public class SignUp extends AppCompatActivity {
                     Intent d = new Intent(getApplicationContext(),SignUp2.class);
                     d.putExtra("uname",e1.getText().toString());
                     d.putExtra("pass",e2.getText().toString());
-                    d.putExtra("phone",phone);
+                    d.putExtra("ph",ph);
                     startActivity(d);
                     overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
                 }
