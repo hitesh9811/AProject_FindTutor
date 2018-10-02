@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class number_register extends AppCompatActivity {
 
     private static final int MY_PERMISSIONS_REQUEST_SEND_SMS=0;
-    String pn;
+    String phoneNumber;
     Button reg;
     EditText phn;
 
@@ -32,12 +32,12 @@ public class number_register extends AppCompatActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pn=phn.getText().toString();
-                if(pn != null && !pn.isEmpty() && pn.length()>9) {
+                phoneNumber=phn.getText().toString();
+                if(phoneNumber != null && !phoneNumber.isEmpty() && phoneNumber.length()>9) {
                 send_sms();
                 Intent b=new Intent(getApplicationContext(),number_confirm.class);
 
-                b.putExtra(pn,"phone");
+                b.putExtra(phoneNumber,"phone");
 
                 startActivity(b);
                 overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
@@ -100,7 +100,7 @@ public class number_register extends AppCompatActivity {
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     SmsManager smsManager = SmsManager.getDefault();
-                    smsManager.sendTextMessage(pn, null, "Your verification code is 664732", null, null);
+                    smsManager.sendTextMessage(phoneNumber, null, "Your verification code is 664732", null, null);
                     Toast.makeText(getApplicationContext(), "SMS sent.",
                             Toast.LENGTH_LONG).show();
                 } else {
