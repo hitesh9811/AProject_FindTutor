@@ -22,7 +22,7 @@ import android.widget.Toast;
 public class Teacher extends AppCompatActivity {
 
     String subject;
-    TextView t,des,quality,mailID,sub;
+    TextView t,des,qua,mailID,sub;
     ImageView img;
     Gallery g;
     int[] images={R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4,R.drawable.img5};
@@ -38,7 +38,7 @@ public class Teacher extends AppCompatActivity {
                 g=(Gallery)findViewById(R.id.gallery);
                 t=(TextView)findViewById(R.id.teacher);
                 des=(TextView)findViewById(R.id.summary);
-                quality=(TextView)findViewById(R.id.qualityification);
+                qua=(TextView)findViewById(R.id.quaification);
                 mailID=(TextView)findViewById(R.id.emailID);
         sub=(TextView)findViewById(R.id.subject);
 
@@ -65,7 +65,7 @@ Intent get=getIntent();
                             
                             t.setText("Vipin Rathi");
                             des.setText("Research Scholar at JNU,Internship at CERN,Research Fellow at NISCAIR(CSIR),etc");
-                            quality.setText("RHCSA, RHCSE, RHCA, MCSA, Mtech(CSE) ");
+                            qua.setText("RHCSA, RHCSE, RHCA, MCSA, Mtech(CSE) ");
                             mailID.setText("vipinrathi@gmail.com");  
 
 
@@ -74,28 +74,28 @@ Intent get=getIntent();
                         {
                             t.setText("Shivam Gupta");
                             des.setText("UI UX Designer. Android Enthusiast. Love Guru.");
-                            quality.setText("BCA");
+                            qua.setText("BCA");
                             mailID.setText("shivamgupta@gmail.com");
                         }
                         if(position==2)
                         {
                             t.setText("Sukhjeet Singh");
                             des.setText("Coder for life. Pooper. Beemar hone vala hai. Century Link Employee");
-                            quality.setText("BCA");
+                            qua.setText("BCA");
                             mailID.setText("gulati@gmail.com");
                         }
                         if(position==3)
                         {
                             t.setText("Nitish Chaudhary");
                             des.setText("UI UX Designer. Graphic Designing Expert. Game Developer");
-                            quality.setText("BSc");
+                            qua.setText("BSc");
                             mailID.setText("c.nitish@gmail.com");
                         }
                         if(position==4)
                         {
                             t.setText("Arjun Chopra");
                             des.setText("Pharmacist. Chemistry Enthusiast.");
-                            quality.setText("BSc");
+                            qua.setText("BSc");
                             mailID.setText("c.arjun@gmail.com");
                         }
                     }
