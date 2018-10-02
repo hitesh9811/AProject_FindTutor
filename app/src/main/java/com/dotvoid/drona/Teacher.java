@@ -21,8 +21,8 @@ import android.widget.Toast;
 
 public class Teacher extends AppCompatActivity {
 
-    String subjct;
-    TextView t,des,qual,mailID,sub;
+    String subject;
+    TextView t,des,quality,mailID,sub;
     ImageView img;
     Gallery g;
     int[] images={R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4,R.drawable.img5};
@@ -38,15 +38,15 @@ public class Teacher extends AppCompatActivity {
                 g=(Gallery)findViewById(R.id.gallery);
                 t=(TextView)findViewById(R.id.teacher);
                 des=(TextView)findViewById(R.id.summary);
-                qual=(TextView)findViewById(R.id.qualification);
+                quality=(TextView)findViewById(R.id.qualityification);
                 mailID=(TextView)findViewById(R.id.emailID);
         sub=(TextView)findViewById(R.id.subject);
 
 Intent get=getIntent();
-        subjct=get.getStringExtra("sub");
+        subject=get.getStringExtra("sub");
 
 
-        sub.setText("Learn "+subjct+" from,");
+        sub.setText("Learn "+subject+" from,");
 
                 CustomGalleryAdapter adapter=new CustomGalleryAdapter(getApplicationContext(),images);
                 g.setAdapter(adapter);
@@ -65,7 +65,7 @@ Intent get=getIntent();
                             
                             t.setText("Vipin Rathi");
                             des.setText("Research Scholar at JNU,Internship at CERN,Research Fellow at NISCAIR(CSIR),etc");
-                            qual.setText("RHCSA, RHCSE, RHCA, MCSA, Mtech(CSE) ");
+                            quality.setText("RHCSA, RHCSE, RHCA, MCSA, Mtech(CSE) ");
                             mailID.setText("vipinrathi@gmail.com");  
 
 
@@ -74,28 +74,28 @@ Intent get=getIntent();
                         {
                             t.setText("Shivam Gupta");
                             des.setText("UI UX Designer. Android Enthusiast. Love Guru.");
-                            qual.setText("BCA");
+                            quality.setText("BCA");
                             mailID.setText("shivamgupta@gmail.com");
                         }
                         if(position==2)
                         {
                             t.setText("Sukhjeet Singh");
                             des.setText("Coder for life. Pooper. Beemar hone vala hai. Century Link Employee");
-                            qual.setText("BCA");
+                            quality.setText("BCA");
                             mailID.setText("gulati@gmail.com");
                         }
                         if(position==3)
                         {
                             t.setText("Nitish Chaudhary");
                             des.setText("UI UX Designer. Graphic Designing Expert. Game Developer");
-                            qual.setText("BSc");
+                            quality.setText("BSc");
                             mailID.setText("c.nitish@gmail.com");
                         }
                         if(position==4)
                         {
                             t.setText("Arjun Chopra");
                             des.setText("Pharmacist. Chemistry Enthusiast.");
-                            qual.setText("BSc");
+                            quality.setText("BSc");
                             mailID.setText("c.arjun@gmail.com");
                         }
                     }
