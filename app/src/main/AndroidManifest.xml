@@ -9,7 +9,7 @@
         android:allowBackup="true"
         android:icon="@drawable/logo1"
         android:label="Find Tutor"
-        android:supportsRtl="true"
+        android:supportsRtl="false"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
